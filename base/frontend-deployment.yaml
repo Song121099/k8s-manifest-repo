@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: project
+  template:
+    metadata:
+      labels:
+        app: project
+    spec:
+      containers:
+        - name: project-cicd
+          image: 823796879023.dkr.ecr.ap-northeast-2.amazonaws.com/project-cicd:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
