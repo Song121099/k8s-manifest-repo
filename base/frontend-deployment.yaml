@@ -4,7 +4,7 @@ metadata:
   name: project
   namespace: default
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: project
@@ -18,4 +18,4 @@ spec:
           image: 823796879023.dkr.ecr.ap-northeast-2.amazonaws.com/project-cicd:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8000
