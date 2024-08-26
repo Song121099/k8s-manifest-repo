@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: 823796879023.dkr.ecr.ap-northeast-2.amazonaws.com/project-cicd
   newName: 823796879023.dkr.ecr.ap-northeast-2.amazonaws.com/project-cicd
-  newTag: abcdefg
+  newTag: "29005369"
 resources:
 - ../../base
 patchesStrategicMerge:
